@@ -1,7 +1,6 @@
 <?php
-require 'vendor/autoload';
-
 require_once('php/datos.php');
+require_once('php/randomizer.php');
 ?>
 
 
@@ -17,14 +16,16 @@ require_once('php/datos.php');
     
 </head>
 <body>
- <form action="index.php" method="post">
-
-<?php
-for($i = 0; $i < 16)
- echo (rand(10, 30) . "<br>");
-
- ?>
-
+    <div class="container">
+        <header>
+            <h1>RandomBoiz</h1>
+        </header>
+    </div>
+    <div class="function">
+        <?php
+            randomizer();
+        ?>
+    </div>
 
     </form>
 </body>
