@@ -1,6 +1,10 @@
 <?php
-require_once('php/datos.php');
-require_once('php/randomizer.php');
+
+require_once('models/randomizer.php');
+
+$gtd= new Randomizer('localhost' , 'root', '', 'random');
+
+
 ?>
 
 
@@ -11,7 +15,7 @@ require_once('php/randomizer.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
+
     <link rel="stylesheet" href="css/styles.css">
     
 </head>
@@ -23,7 +27,7 @@ require_once('php/randomizer.php');
     </div>
     <div class="function">
         <?php
-            randomizer();
+            $gtd->randomizer();
         ?>
     </div>
 

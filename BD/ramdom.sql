@@ -19,27 +19,27 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `ramdom`
+-- Base de datos: `random`
 --
-CREATE DATABASE IF NOT EXISTS `ramdom` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `ramdom`;
+CREATE DATABASE IF NOT EXISTS `random` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `random`;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `new_table`
+-- Estructura de tabla para la tabla `persona`
 --
 
-CREATE TABLE `new_table` (
+CREATE TABLE `persona` (
   `id_nombre` int(10) NOT NULL,
   `nombre` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `new_table`
+-- Volcado de datos para la tabla `persona`
 --
 
-INSERT INTO `new_table` (`id_nombre`, `nombre`) VALUES
+INSERT INTO `persona` (`id_persona`, `nombre`) VALUES
 (1, 'Mateo'),
 (2, 'Jose'),
 (3, 'Lolo'),
@@ -63,8 +63,8 @@ INSERT INTO `new_table` (`id_nombre`, `nombre`) VALUES
 --
 -- Indices de la tabla `new_table`
 --
-ALTER TABLE `new_table`
-  ADD PRIMARY KEY (`id_nombre`);
+ALTER TABLE `persona`
+  ADD PRIMARY KEY (`id_persona`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -73,8 +73,8 @@ ALTER TABLE `new_table`
 --
 -- AUTO_INCREMENT de la tabla `new_table`
 --
-ALTER TABLE `new_table`
-  MODIFY `id_nombre` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+ALTER TABLE `persona`
+  MODIFY `id_persona` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
